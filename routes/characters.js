@@ -72,7 +72,6 @@ charactersRouter.get('/characters/quidditch/match', (req, res) => {
   }
 
   //* Two matches with two groups
-
   const matches = {
     match1: ['Group 1:', ...group_1, 'Group 2:', ...group_2],
     match2: ['Group 3:', ...group_3, 'Group 4:', ...group_4],
