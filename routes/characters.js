@@ -59,11 +59,11 @@ charactersRouter.get('/characters/quidditch/match', (req, res) => {
   const referee = [];
 
   //* Group size is six,  Teams are the players divided by four
-  for (let i = 1; i <= groupSize; i++) {
+  for (let i = 0; i <= groupSize - 1; i++) {
     group_1.push(characters[i]);
-    group_2.push(characters[i + 1]);
-    group_3.push(characters[i + 2]);
-    group_4.push(characters[i + 3]);
+    group_2.push(characters[i + 6]);
+    group_3.push(characters[i + 12]);
+    group_4.push(characters[i + 18]);
 
     //* Referees are who are not in the team
     if (group_1.length === groupSize) {
