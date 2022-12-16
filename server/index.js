@@ -15,11 +15,8 @@ app.use((req, res, next) => {
 
   next();
 });
-
-//* Routes
 app.use('/', charactersRouter);
 
 app.listen(PORT, () => {
   console.log(colors.cyan.italic(`Server is running on port ${PORT}`));
-  console.log();
 });
